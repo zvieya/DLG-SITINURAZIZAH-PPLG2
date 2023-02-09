@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        class bangun_datar {
+            luas(){}
+            keliling (){}
+        }
+
+        class persegi  extends bangun_datar {
+            sisi;
+            luas(){
+               // sisi * sisi
+               return this.sisi * this.sisi;
+            }
+            keliling(){
+            //sisi * sisi
+            return this.sisi + this.sisi + this.sisi + this.sisi;
+
+        }
+
+        }
+
+        var persegi1 = new persegi();
+        persegi1.sisi =4;
+
+        document.write("luas perseginya : " + persegi1.luas() + "<br />");
+        document.write("keliling perseginya : " + persegi1.keliling()+ "<br />");
+
+
+
+
+        class segitiga  extends bangun_datar {
+            alas ;
+            tinggi;
+            sisi ;
+            luas (){
+                return 0,5 * this.alas * this.tinggi;
+            }
+            keliling (){
+                return this.sisi + this.sisi + this.sisi
+            }
+            
+            }
+            
+
+        var segitiga1 = new segitiga();
+        segitiga1.alas =4;
+        segitiga1.tinggi =3;
+        segitiga1.sisi=5;
+
+       
+        document.write("luas segitiganya : " + segitiga1.luas()+ "<br />");
+        document.write("keliling segitiganya : " + segitiga1.keliling()+ "<br />");
+
+
+
+
+
+
+         
+
+    </script>
+</body>
+</html>
