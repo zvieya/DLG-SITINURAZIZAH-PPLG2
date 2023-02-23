@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        class user {
+            #username= "ziza";
+            #email = "zyzaazizah43@gmail.com";
+            #password = "54638";
+            #umur = 23;
+
+            set username(nilai_username){
+                this.#username = nilai_username;
+            }
+
+            set email(nilai_email){
+                this.#email = nilai_email;
+            }
+
+            set password(nilai_password){
+                this.#password = nilai_password;
+            }
+
+            set umur(nilai_umur){
+                this.#umur = nilai_umur;
+            }
+
+            get username(){
+                return this.#username;
+            }
+
+            get email(){
+                return this.#email;
+            }
+
+            get password(){
+                return this.#password;
+            }
+
+            get umur(){
+                return this.#umur;
+            }
+        }
+        var user1 = new user();
+
+        user1.username = "ziza";
+        user1.email= "zyzaazizah43@gmail.com";
+        user1.password = "54638";
+        user1.umur = "23"
+
+        document.write(user1.username + "<br/>");
+        document.write(user1.email+ "<br/>");
+        document.write(user1.password+ "<br/>");
+        document.write(user1.umur+ "<br/>");
+        document.write("<hr />");
+
+
+        var user2 = new user();
+
+        user2.username = "taeyong";
+        user2.email= "leetaeyong93@gmail.com";
+        user2.password = "657389";
+        user2.umur = "28"
+
+        document.write(user2.username + "<br/>");
+        document.write(user2.email+ "<br/>");
+        document.write(user2.password+ "<br/>");
+        document.write(user2.umur+ "<br/>");
+        document.write("<hr />");
+
+        var user3 = new user();
+
+        user3.username = "jaehyun";
+        user3.email= "leejaehyun93@gmail.com";
+        user3.password = "873954";
+        user3.umur = "30"
+
+        document.write(user3.username + "<br/>");
+        document.write(user3.email+ "<br/>");
+        document.write(user3.password+ "<br/>");
+        document.write(user3.umur+ "<br/>");
+        document.write("<hr />");
+
+        
+
+
+</script>
+    </script>
+</body>
+</html>
